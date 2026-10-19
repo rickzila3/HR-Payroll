@@ -13,7 +13,7 @@ export function createApp(): Express {
   // Basic security and parsing middleware
   app.use(
     cors({
-      origin: env.CORS_ORIGINS.split(",").map((origin) => origin.trim()),
+     origin: env.CORS_ORIGINS,
       credentials: true,
     })
   );
